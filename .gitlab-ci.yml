@@ -1,0 +1,10 @@
+stages:
+  - test
+
+setup_environment:
+  stage: test
+  script:
+    - pip install pytest
+    - pytest --version
+    - pytest
+
